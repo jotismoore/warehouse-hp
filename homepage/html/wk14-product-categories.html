@@ -1,0 +1,131 @@
+<div class="container">
+    <style>
+        #edit-carousel-container {
+            width:95%;
+            margin:-10px auto 20px;
+            padding-top:20px;
+            font-size:14px;
+        }
+        #edit-carousel-container h2 {
+            text-transform:uppercase;
+            text-align:center;
+            line-height:0.8;
+            font-size:22px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        #edit-carousel .flex-direction-nav a.flex-prev {
+            left:-35px;
+            top:50%;
+        }
+        #edit-carousel .flex-direction-nav a.flex-next {
+            right:-30px;
+            top:50%;
+        }
+        #edit-carousel ul.slides li.edit-carousel-item {
+            position:relative;
+            margin:0px 20px 0 -10px;
+            cursor:pointer;
+            text-align:center;
+            font-family:'HelveticaNeue',sans-serif;
+            font-size: 13px;
+        }
+        #edit-carousel ul.slides li.edit-carousel-item .saleprice {
+            color:red;
+        }
+        .flexslider .slides img {
+            padding-bottom: 10px;
+        }
+        .edit-carousel-item .brackets-cta {
+            display:inline-block;
+            font-weight:bold;
+            font-size:17px;
+            transition:0.5s;
+            text-transform:uppercase;
+            -webkit-transform:translate3d(0,0,0);
+            transform:translate3d(0,0,0);
+        }
+        .edit-carousel-item .brackets-cta:before,.edit-carousel-item .brackets-cta:after {
+            font-family:"wh-icons";
+            font-size:24px;
+            position:relative;
+            top:4px;
+        }
+        .edit-carousel-item .brackets-cta:before {
+            content:'\e908';
+            left:5px;
+        }
+        .edit-carousel-item .brackets-cta:after {
+            content:'\e909';
+            right:1px;
+        }
+        .edit-carousel-item:hover .brackets-cta {transform:scale(1.08);}
+
+        @media only screen and (max-width:1230px) {
+            #edit-carousel-container h2 {
+                font-size: 20px;
+            }
+        }
+        @media only screen and (max-width:667px) {
+
+            #edit-carousel {
+                display: none;
+            }
+        }
+    </style>
+    <div id="edit-carousel-container">
+        <div id="edit-carousel">
+            <ul class="slides">
+                <li class="edit-carousel-item">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <img src="http://demandware.edgesuite.net/sits_pod30/dw/image/v2/AAXE_PRD/on/demandware.static/-/Sites-WAREHOUSE/default/images/hi-res/warehouse_02901677_1.jpg" />
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+                <li class="edit-carousel-item">
+                    <a href="$url('Search-Show','cgid','all-tops')$?cm_re=Homepage-_-product-carousel-_-all-tops">
+                        <img src="http://demandware.edgesuite.net/sits_pod30/dw/image/v2/AAXE_PRD/on/demandware.static/-/Sites-WAREHOUSE/default/images/hi-res/warehouse_02913799_1.jpg" />
+                        <p class="brackets-cta">Shop tops</p>
+                    </a>
+                </li>
+                <li class="edit-carousel-item">
+                    <a href="$url('Search-Show','cgid','accessories')$?cm_re=Homepage-_-product-carousel-_-accessories">
+                        <img src="http://demandware.edgesuite.net/sits_pod30/dw/image/v2/AAXE_PRD/on/demandware.static/-/Sites-WAREHOUSE/default/images/hi-res/warehouse_02886277_1.jpg" />
+                        <p class="brackets-cta">Shop accessories</p>
+                    </a>
+                </li>
+                <li class="edit-carousel-item">
+                    <a href="$url('Search-Show','cgid','dresses')$?cm_re=Homepage-_-product-carousel-_-dresses">
+                        <img src="http://demandware.edgesuite.net/sits_pod30/dw/image/v2/AAXE_PRD/on/demandware.static/-/Sites-WAREHOUSE/default/images/hi-res/warehouse_02907545_1.jpg" />
+                        <p class="brackets-cta">Shop dresses</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            if ($(window).width() > 667) {
+                $('#edit-carousel').flexslider({
+                    slideshow:true,
+                    animation:"slide",
+                    itemWidth:210,
+                    itemMargin:5,
+                    slideshowSpeed:5000,
+                    // minItems:2,
+                    minItems:4,
+                    maxItems:4
+                });
+            } else {
+                // $('#edit-carousel').hide()
+                $('#edit-carousel').flexslider({
+                    slideshow:true,
+                    animation:"slide",
+                    slideshowSpeed:1000,
+                    controlNav:false
+                });
+            }
+            $('#edit-carousel').addClass('flexslider');
+        });
+    </script>
+</div>

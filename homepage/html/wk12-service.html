@@ -1,0 +1,83 @@
+<div class="container">
+    <style>
+        .triple-slice a {
+            background:#eae8e8;
+            color:#000;
+            text-align:center;
+            padding:6px 0.5% 3.5px;
+            display:block;
+            float:left;
+            text-transform:uppercase;
+            font-weight:600;
+            width:32%;
+            margin:0 0.5% 5px 0;
+            font-size:14px;
+        }
+        .triple-slice a:nth-of-type(3) {margin:0 0 5px 0;}
+        header {border-color:#fff;}
+        .hero_section {margin:0;}
+        .triple-slice.mobile {display:none;}
+        @media only screen and (max-width:1280px){
+            .triple-slice a {
+                display:block;
+                margin:0 0.5% 5px 0;
+                width:48.75%;
+            }
+            .triple-slice a:nth-of-type(1) {margin:0 2px 5px 0;}
+            .triple-slice a:nth-of-type(2) {display:none;}
+            .triple-slice a:nth-of-type(3) {margin:0 0 5px 2px;}
+        }
+        @media only screen and (max-width:850px){
+            .triple-slice.desktop {display:none;}
+            .triple-slice.mobile {display:block;}
+            .triple-slice a {
+                display:block!important;
+                margin:0 0 5px;
+                width:100%;
+            }
+        }
+    </style>
+    <div class="triple-slice desktop">
+        <a href="$url('Search-Show','cgid','seasonal-offers')$?cm_re=Homepage-_-Service-slice_POS-prints">25% off Prints | Shop Now</a>
+        <a href="$url('Search-Show','cgid','bags')$?cm_re=Homepage-_-Service-slice_POS-bags">25% off selected bags | shop now</a>
+        <a href="$url('Search-Show','cgid','seasonal-promotions')$?cm_re=Homepage-_-Service-slice_POS-jersey">20% off Jersey | Shop Now</a>
+    </div>
+    <div class="triple-slice mobile">
+        <div class="flexslider">
+            <ul class="slides">
+                <li><a href="$url('Search-Show','cgid','bags')$?cm_re=Homepage-_-Service-slice_POS-bags">25% off selected bags | shop now</a></li>
+                <li><a href="$url('Search-Show','cgid','seasonal-offers')$?cm_re=Homepage-_-Service-slice_POS-prints">25% off Prints | Shop Now</a></li>
+                <li><a href="$url('Search-Show','cgid','seasonal-promotions')$?cm_re=Homepage-_-Service-slice_POS-jersey">20% off Jersey | Shop Now</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            if ($(window).width()<850) {
+                $('.triple-slice .flexslider').flexslider({
+                    slideshow:true,
+                    animation:'fade',
+                    animationLoop:true,
+                    slideshowSpeed:3000,
+                    controlNav:false,
+                    directionNav:false
+                });
+            }
+        });
+    </script>
+
+    <!-- HP logo resize -->
+    <style>
+        header #logo>img {width:320px;}
+        #navigation {padding-top:13px;}
+    </style>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()>90){
+                $('#header').css('height','92px');
+                $('#navigation').css('paddingTop','8px');
+            }
+        });
+    </script>
+</div>

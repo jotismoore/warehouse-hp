@@ -1,0 +1,64 @@
+<div class="container">
+    <style>
+        .mobile-categories {
+            text-align:center;
+            text-transform:uppercase;
+            font-weight:600;
+            display:none;
+            font-size:16px;
+            width:99%;
+            clear:both;
+        }
+        .mobile-categories,.mobile-categories ul,.mobile-categories li {
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+        .mobile-categories li {
+            padding:10px 0;
+            width:48.5%;
+            float:left;
+            margin:0.72vw;
+            background:#000;
+            color:#fff;
+        }
+        .mobile-categories ul.black li {
+            background:#000;
+            color:#fff;
+        }
+        .mobile-categories ul.purple li {
+            background:#605471;
+            color:#fff;
+        }
+        .mobile-categories ul.purple-outline li {
+            background:#fff;
+            outline:1px solid #605471;
+            color:#605471;
+        }
+        .mobile-categories ul.purple-outline li:hover,.mobile-categories ul.purple-outline li:focus {
+            background:#605471;
+            color:#fff;
+        }
+        @media only screen and (max-width:667px){
+            .mobile-categories {
+                display:block;
+                margin:0 auto;
+                padding-top:10px;
+            }
+        }
+    </style>
+    <div class="mobile-categories">
+        <ul class="purple-outline">
+            <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-mobile-button-_-new-in"><li>New In</li></a>
+            <a href="$url('Search-Show','cgid','dresses')$?cm_re=Homepage-_-mobile-button-_-dresses"><li>Dresses</li></a>
+            <a href="$url('Search-Show','cgid','all-tops')$?cm_re=Homepage-_-mobile-button-_-tops"><li>Tops</li></a>
+            <a href="$url('Search-Show','cgid','skirts')$?cm_re=Homepage-_-mobile-button-_-skirts"><li>Skirts</li></a>
+            <a href="$url('Search-Show','cgid','playsuits-jumpsuits')$?cm_re=Homepage-_-mobile-button-_-jumpsuits"><li>Jumpsuits</li></a>
+            <a href="$url('Search-Show','cgid','beachwear')$?cm_re=Homepage-_-mobile-button-_-beachwear"><li>Beachwear</li></a>
+            <a href="$url('Search-Show','cgid','trousers')$?cm_re=Homepage-_-mobile-button-_-trousers"><li>Trousers</li></a>
+            <a href="$url('Search-Show','cgid','sale')$?cm_re=Homepage-_-mobile-button-_-sale"><li>Sale</li></a>
+            <!--     <a href="$url('Search-Show','cgid','accessories')$?cm_re=Homepage-_-mobile-button-_-accessories"><li>Accessories</li></a> -->
+        </ul>
+        <br style="clear:both" />
+    </div>
+</div>

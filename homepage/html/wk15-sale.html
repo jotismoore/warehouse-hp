@@ -1,0 +1,127 @@
+<div class="container">
+    <style>
+        @keyframes animatedBackground {
+            from { background-position: 0 0; }
+            to { background-position: 100% 0; }
+        }
+        .container {
+            position: relative;
+            max-width: 1280px;
+            width: 100%;
+            text-align: center;
+        }
+        .sale-banner {
+            width: 100%;
+            display: inline-block;
+            background-image: url("/homepage/img/w16-sale-hp-bg@2x.png?$staticlink$");
+            background-size: auto;
+            margin-bottom: 30px;
+        }
+        .sale-banner:hover {
+            background-repeat: repeat-x;
+            animation: animatedBackground 40s linear infinite;
+        }
+        .sale-banner:after {
+            content: '';
+            display: block;
+            margin-top: 38%;
+        }
+        .sale-banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .sale-banner a {
+            position: absolute;
+            width: 100%;
+            top: 20px;
+            right: 20px;
+            background-color: blue;
+            opacity: 0.4;
+        }
+        .cta-container {
+            text-align: center;
+        }
+        .cta-tile {
+            width: 20%;
+            margin: 40px 25px;
+            background-image: url("/homepage/img/w16-sale-category-bg.png?$staticlink$");
+            display: inline-block;
+            position: relative;
+        }
+        .cta-tile:after {
+            content: '';
+            display: block;
+            margin-top: 100%;
+        }
+        .cta-tile a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 20px;
+            right: 20px;
+            background-image: url("/homepage/img/w16-sale-category-hover-1-1.png?$staticlink$");
+        }
+        /*.cta-tile:hover {*/
+            /*background-color: blue;*/
+            /*transition: background-image 0.2s ease-in;*/
+        /*}*/
+        .cta-tile:hover a {
+            background-image: url("/homepage/img/w16-sale-category-hover-1-2.png?$staticlink$");
+            transition: background-image 0.2s ease-in;
+        }
+    </style>
+    <div class="homepage">
+        <div class="container">
+            <div class="sale-banner">
+                <a href="regrg">
+                    <img src="http://demandware.edgesuite.net/aaxe_prd/on/demandware.static/-/Library-Sites-WarehouseSharedLibrary/default/dw42c8b13b/homepage/wk15/w14-hp-bg-20promo.jpg?$staticlink$" class="desk-only-hero" alt="25% Off Bags" title="20% Off Dresses" />
+                </a>
+            </div>
+            <ul class="cta-container">
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <span>
+                            <p class="brackets-cta">Shop new in</p>
+                        </span>
+                    </a>
+                </li>
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+                <li class="cta-tile">
+                    <a href="$url('Search-Show','cgid','new-in-all')$?cm_re=Homepage-_-product-carousel-_-new-in-all">
+                        <p class="brackets-cta">Shop new in</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
